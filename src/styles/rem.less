@@ -1,0 +1,86 @@
+.rem(@base:62.5%) {
+  @unit: 1px;
+  @ratio: (@base / 62.5%);
+  html {
+    font-size: unit((10 * @ratio), px) !important; // 安卓4.4以下手机的兜底
+    font-size: unit(
+      (2.6667 * @ratio),
+      vw
+    ) !important; // 主流手机，使用vw。计算方式为10*100/375，即以375宽度屏幕下font-size为10px的vw值
+    // 避免H5在PC上被过分放大
+    @media (min-width: 750px) {
+      font-size: unit((20 * @ratio), px) !important;
+    }
+    // 为常见的安卓4.4以下手机的屏幕输出兜底方案
+    @media (device-width: 320px) {
+      font-size: unit((8.53 * @ratio), px) !important;
+    }
+
+    @media (device-width: 360px) {
+      font-size: unit((9.6 * @ratio), px) !important;
+    }
+
+    @media (device-width: 375px) {
+      font-size: unit((10 * @ratio), px) !important;
+    }
+
+    @media (device-width: 384px) {
+      font-size: unit((10.24 * @ratio), px) !important;
+    }
+
+    @media (device-width: 412px) {
+      font-size: unit((10.99 * @ratio), px) !important;
+    }
+
+    @media (device-width: 414px) {
+      font-size: unit((11.04 * @ratio), px) !important;
+    }
+
+    @media (device-width: 480px) {
+      font-size: unit((12.8 * @ratio), px) !important;
+    }
+  }
+}
+
+html {
+  @unit: 1px;
+  @base: 62.5%;
+  @ratio: (@base / 62.5%);
+  font-size: unit((10 * @ratio), px) !important; // 安卓4.4以下手机的兜底
+  font-size: unit(
+    (2.6667 * @ratio),
+    vw
+  ) !important; // 主流手机，使用vw。计算方式为10*100/375，即以375宽度屏幕下font-size为10px的vw值
+  // 避免H5在PC上被过分放大
+  @media (min-width: 750px) {
+    font-size: unit((20 * @ratio), px) !important;
+  }
+  // 为常见的安卓4.4以下手机的屏幕输出兜底方案
+  @media (device-width: 320px) {
+    font-size: unit((8.53 * @ratio), px) !important;
+  }
+
+  @media (device-width: 360px) {
+    font-size: unit((9.6 * @ratio), px) !important;
+  }
+
+  @media (device-width: 375px) {
+    font-size: unit((10 * @ratio), px) !important;
+  }
+
+  @media (device-width: 384px) {
+    font-size: unit((10.24 * @ratio), px) !important;
+  }
+
+  @media (device-width: 412px) {
+    font-size: unit((10.99 * @ratio), px) !important;
+  }
+
+  @media (device-width: 414px) {
+    font-size: unit((11.04 * @ratio), px) !important;
+  }
+
+  @media (device-width: 480px) {
+    font-size: unit((12.8 * @ratio), px) !important;
+  }
+}
