@@ -155,8 +155,8 @@ export default {
           },
         ],
         labels: [{ required: true, message: "请为商品添加至少一个标签" }],
-        categoryId: [{ required: true }],
-        subcategoryId: [{ required: true }],
+        categoryId: [{ required: true, message: "请选择一个分类" }],
+        subcategoryId: [{ required: true, message: "请选择一个分类" }],
         pics: [{ required: true, message: "请为商品添加1-10张图片" }],
       },
     };

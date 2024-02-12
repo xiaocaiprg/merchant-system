@@ -1,14 +1,14 @@
 import Vue from "vue";
 import Router from "vue-router";
 
-// import Agent from "../pages/agent/index.vue";
+import Integral from "../pages/integrals/index.vue";
 import Products from "../pages/products/index.vue";
 import Orders from "../pages/orders/index.vue";
 import OrderDetail from "../pages/orders/order-detail.vue";
 import ProductEdit from "../pages/products/product-edit.vue";
 Vue.use(Router);
 const routes = [
-  // { path: "/agent", component: Agent },
+  { path: "/integrals", component: Integral },
   { path: "/products", component: Products },
   { path: "/orders", component: Orders },
   { path: "/order-detail", component: OrderDetail },

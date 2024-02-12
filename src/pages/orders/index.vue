@@ -144,11 +144,11 @@ export default {
           prop: "userName",
           width: 100,
         },
-        {
-          label: "购买用户Id",
-          prop: "userId",
-          width: 100,
-        },
+        // {
+        //   label: "购买用户Id",
+        //   prop: "userId",
+        //   width: 100,
+        // },
         {
           label: "积分",
           prop: "integral",
@@ -158,6 +158,16 @@ export default {
           label: "购买数量",
           prop: "orderCount",
           width: 90,
+        },
+        {
+          label: "提货码",
+          prop: "cargocode",
+          formatter: (row, column, cellValue) => {
+            return cellValue.orderStatus === OrderStatusEnum.DONE &&
+              cellValue.categoryId === 3
+              ? cellValue
+              : "本商品无取货码";
+          },
         },
         {
           label: "购买时间",

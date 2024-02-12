@@ -86,6 +86,11 @@ export default {
           path: "/orders",
           icon: "el-icon-document",
         },
+        {
+          name: "我的积分",
+          path: "/integrals",
+          icon: "el-icon-user",
+        },
       ],
       collapse: false,
     };
