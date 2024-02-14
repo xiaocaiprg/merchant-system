@@ -35,6 +35,10 @@
         <span class="order-title">购买用户账户: </span>
         <div class="order-content">{{ orderDetail.cardNum }}</div>
       </div>
+      <div class="order-item">
+        <span class="order-title">用户备注: </span>
+        <div class="order-content">{{ orderDetail.notes }}</div>
+      </div>
 
       <div class="order-item">
         <span class="order-title">购买数量: </span>

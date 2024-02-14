@@ -35,6 +35,7 @@
         :label="item.label"
         :width="item.width || 180"
         :formatter="item.formatter"
+        show-overflow-tooltip
       >
       </el-table-column>
       <el-table-column fixed="right" label="操作" width="180">
@@ -180,6 +181,11 @@ export default {
           formatter: (row, column, cellValue) => {
             return OrderStatus.find(item => item.value === cellValue).label;
           },
+        },
+        {
+          label: "用户备注",
+          prop: "notes",
+          width: 100,
         },
       ];
     },
