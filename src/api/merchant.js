@@ -10,7 +10,7 @@ const API = {
       .loginPost(PATH.LOGIN, params)
       .then(res => {
         if (res.code === 200) {
-          return res.success;
+          return res.result;
         }
       })
       .catch(err => {

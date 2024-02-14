@@ -9,7 +9,7 @@ import ProductEdit from "../pages/products/product-edit.vue";
 Vue.use(Router);
 const routes = [
   { path: "/integrals", component: Integral },
-  { path: "/products", component: Products },
+  { path: "/", component: Products },
   { path: "/orders", component: Orders },
   { path: "/order-detail", component: OrderDetail },
   { path: "/product-edit", component: ProductEdit },

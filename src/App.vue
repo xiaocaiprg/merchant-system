@@ -73,12 +73,12 @@ export default {
     return {
       isLogin: true,
       passWord: "",
-      activeIndex: "/products",
+      activeIndex: "/",
       merchantName: "",
       menuList: [
         {
           name: "商品管理",
-          path: "/products",
+          path: "/",
           icon: "el-icon-goods",
         },
         {

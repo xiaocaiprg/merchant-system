@@ -233,7 +233,7 @@ export default {
                 duration: 1000,
               });
               setTimeout(() => {
-                this.$router.push("/products");
+                this.$router.push("/");
               }, 1000);
             } else {
               this.$message.error("添加失败，请重试");
