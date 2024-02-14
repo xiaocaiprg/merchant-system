@@ -164,7 +164,6 @@ export default {
           label: "提货码",
           prop: "cargocode",
           formatter: (row, column, cellValue) => {
-            console.log(row);
             return row.categoryId === 3
               ? row.orderStatus === OrderStatusEnum.DONE
                 ? cellValue
