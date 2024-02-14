@@ -164,9 +164,11 @@ export default {
           label: "提货码",
           prop: "cargocode",
           formatter: (row, column, cellValue) => {
-            return cellValue.orderStatus === OrderStatusEnum.DONE &&
-              cellValue.categoryId === 3
-              ? cellValue
+            console.log(row);
+            return row.categoryId === 3
+              ? row.orderStatus === OrderStatusEnum.DONE
+                ? cellValue
+                : "取货码待生成"
               : "本商品无取货码";
           },
         },
