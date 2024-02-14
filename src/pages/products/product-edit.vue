@@ -164,7 +164,7 @@ export default {
   computed: {
     uploadHeaders() {
       return {
-        authorization: window.localStorage.getItem("authorization") || "",
+        authorization: window.localStorage.getItem("m-authorization") || "",
       };
     },
     subcategoryIds() {
