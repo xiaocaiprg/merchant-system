@@ -165,7 +165,7 @@ export default {
       ];
     },
     isValid() {
-      return /^\d+$/.test(this.intergral) && this.username;
+      return Boolean(this.username) && /^\d+$/.test(this.intergral);
     },
   },
   created() {
