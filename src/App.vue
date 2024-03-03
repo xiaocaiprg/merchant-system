@@ -104,6 +104,7 @@ export default {
         this.isLogin = false;
       }
     });
+    this.activeIndex = this.$route.path;
   },
   methods: {
     onLogin() {
